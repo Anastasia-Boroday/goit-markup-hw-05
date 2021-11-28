@@ -10,6 +10,7 @@
 
     --bg-overlay-work: rgba(47, 48, 58, 0.8);
     --bg-overlay-filter:rgba(33, 150, 243, 0.9);
+    --bg-backdrop: rgba(0, 0, 0, 0.2);
     --social-icon: #AFB1B8;
 
     --second-background-color:#F5F4FA;
@@ -17,7 +18,7 @@
     --border-color: #ECECEC;
     --border-color-filter: #EEEEEE;
     --box-shadow-comand:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-   
+    --modal-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -246,6 +247,30 @@ img{
 .hero-btn:hover{
     background-color: var(--hero-btn-color) ;
 }
+/* -------------------modal--------------------------- */
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-backdrop);
+    z-index: 1;
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--hero-title-color);
+    border-radius: 4px;
+    box-shadow: var(--modal-shadow);
+    
+    
+}
+
 /* -------------------about--------------------------- */
 .about-list{
     display: flex;
